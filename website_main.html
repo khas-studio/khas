@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KHĀS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+  
+  <style>
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    } 
+
+    body { 
+      background: #000; 
+      color: #fff; 
+      font-family: 'Inter', sans-serif; /* Using Inter font */
+      height: 100vh; 
+      overflow: hidden; 
+    } 
+
+    .background { 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      background-image: url('e30.jpg'); 
+      background-position: center 80%; 
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      background-color: black; 
+      filter: brightness(0.5) contrast(1.2) grayscale(0.2); 
+      z-index: 0; 
+    } 
+
+    .overlay-text { 
+      position: fixed; 
+      top: 50px; 
+      left: 50px; 
+      transform: none; 
+      text-align: left; 
+      z-index: 1; 
+    } 
+
+    .overlay-text h1 { 
+      font-size: 5rem; 
+      font-weight: 700; 
+      letter-spacing: 0.05em; 
+      color: #fff; 
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7); 
+    } 
+
+    .overlay-text p { 
+      font-size: 1.5rem; 
+      font-weight: 400; 
+      margin-top: 10px; 
+      color: #fff; 
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7); 
+    } 
+
+    .socials { 
+      position: fixed; 
+      bottom: 40px; 
+      width: 100%; 
+      display: flex; 
+      justify-content: center; 
+      gap: 30px; 
+      z-index: 2; 
+    } 
+
+    /* FIX: This rule correctly sizes the social media images */
+    .socials a img { 
+      width: 40px; 
+      height: 40px; 
+      filter: invert(1); 
+      transition: transform 0.2s ease, opacity 0.2s ease; 
+    } 
+
+    .socials a img:hover { 
+      transform: scale(1.1); 
+      opacity: 0.8; 
+    } 
+
+    /* Mobile view adjustments */ 
+    @media (max-width: 768px) { 
+      .overlay-text h1 { 
+        font-size: 3rem; 
+      } 
+
+      .overlay-text p { 
+        font-size: 1.2rem; 
+      } 
+
+      .socials { 
+        bottom: 25px; 
+        gap: 20px; 
+      } 
+
+      .socials a img { 
+        width: 32px; 
+        height: 32px; 
+      } 
+    } 
+  </style> 
+</head> 
+<body> 
+  <div class="background"></div> 
+
+  <div class="overlay-text"> 
+    <h1>KHĀS</h1> 
+    <p>Creative Studio</p> 
+  </div> 
+
+  <div class="socials"> 
+    <a href="https://www.tiktok.com/@khascollective" target="_blank"> 
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" /> 
+    </a> 
+    <a href="https://www.instagram.com/khascollective/" target="_blank"> 
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /> 
+    </a> 
+    <a href="https://www.youtube.com/@khascollective" target="_blank"> 
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /> 
+    </a> 
+  </div> 
+</body> 
+</html>
